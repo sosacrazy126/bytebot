@@ -1,4 +1,11 @@
 model_list:
+  # OpenRouter Models
+  - model_name: horizon-beta
+    litellm_params:
+      model: openrouter/horizon-beta
+      api_key: os.environ/OPENROUTER_API_KEY
+      api_base: https://openrouter.ai/api/v1
+
   # Anthropic Models
   - model_name: claude-opus-4
     litellm_params:

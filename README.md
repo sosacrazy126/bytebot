@@ -235,6 +235,7 @@ Bytebot is built with:
 
 Use any AI provider through our [LiteLLM integration](https://docs.bytebot.ai/deployment/litellm):
 
+- **OpenRouter**: Access 100+ models including `horizon-beta` (see [OPENROUTER_SETUP.md](OPENROUTER_SETUP.md))
 - Azure OpenAI
 - AWS Bedrock
 - Local models via Ollama
