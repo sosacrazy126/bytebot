@@ -1,0 +1,19 @@
+[build]
+builder = "dockerfile"
+
+[deploy]
+healthcheckPath = "/"
+healthcheckTimeout = 300
+restartPolicyType = "on_failure"
+
+# Environment variables for OpenRouter and other LLM providers
+[env]
+OPENROUTER_API_KEY = { default = "" }
+ANTHROPIC_API_KEY = { default = "" }
+OPENAI_API_KEY = { default = "" }
+GEMINI_API_KEY = { default = "" }
+DATABASE_URL = { default = "postgresql://postgres:postgres@postgres:5432/bytebotdb" }
+BYTEBOT_DESKTOP_BASE_URL = { default = "http://bytebot-desktop:9990" }
+BYTEBOT_LLM_PROXY_URL = { default = "http://bytebot-llm-proxy:4000" }
+BYTEBOT_AGENT_BASE_URL = { default = "http://bytebot-agent:9991" }
+BYTEBOT_DESKTOP_VNC_URL = { default = "http://bytebot-desktop:9990/websockify" }
